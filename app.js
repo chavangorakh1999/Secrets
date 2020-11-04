@@ -58,6 +58,9 @@ passport.deserializeUser(function (id, done) {
     done(err, user);
   });
 });
+
+// <---------GOOGLE STRATEGY-------------------->
+
 passport.use(
   new GoogleStrategy(
     {
